@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y curl vim wget software-properties-commo
 ENV SPARK_VERSION=3.1.2 \
 HADOOP_VERSION=3.2 \
 SPARK_HOME=/opt/spark \
-MVN_VERSION=3.9.3
+MVN_VERSION=3.9.4
 
 RUN wget --no-verbose -O apache-spark.tgz "https://archive.apache.org/dist/spark/spark-${SPARK_VERSION}/spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz" \
 && mkdir -p /opt/spark \
